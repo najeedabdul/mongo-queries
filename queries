@@ -1,0 +1,4 @@
+//find documents that have an array of size greater than 0
+db.getCollection('subscriber').find({
+    recordings: { $exists: true, $gt: [0] }
+})
